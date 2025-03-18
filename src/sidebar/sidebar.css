@@ -1,0 +1,38 @@
+.sidebar {
+    width: 200px;
+    background-color: #222;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    bottom: 0;
+    z-index: 10;
+  }
+  
+.topic-container {
+    margin-bottom: 15px;
+    color: white;
+}
+  
+.genre-button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #444;
+    color: white;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+  
+.genre-button:hover {
+    background-color: #666;
+}
+  
+.genre-button.active {
+    background-color: #008cba;
+}
+  

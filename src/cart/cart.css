@@ -1,0 +1,134 @@
+/* Cart container on the right side */
+.cart-container {
+    margin-top: 50px;
+    position: fixed;
+    right: 0px;
+    top: 20px;
+    width: 250px;
+    background-color: rgba(34, 34, 34, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-height: 80vh; /* Optional: limit max height to 80% of the viewport height */
+}
+
+.cart-list {
+    overflow-y: auto; /* Enables scrolling */
+    max-height: 80vh; /* Limits the cart list height */
+    flex-grow: 1;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #444;
+}
+
+.remove-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.empty-cart {
+    text-align: center;
+    font-style: italic;
+}
+
+.total-price {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 0px; /* Space between the buttons */
+    margin-top: 5px; /* Space from the list */
+}
+  
+/* Purchase Button */
+.purchase-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+}
+  
+.purchase-btn:hover {
+    background-color: #388e3c;
+}
+
+/* Clear Cart Button */
+.clear-cart-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+  
+.clear-cart-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Shopping cart icon positioned fixed on the right */
+.shopping-cart-icon {
+    position: fixed;  /* Fixed position to the page */
+    right: 20px;  /* Position it from the right */
+    bottom: 20px; /* Position it from the bottom */
+    display: flex;
+    justify-content: center; /* Centers the icon horizontally */
+    align-items: center; /* Centers the icon vertically */
+    width: 60px; /* Adjust the width */
+    height: 60px; /* Adjust the height */
+    font-size: 2.5rem; /* Makes the icon bigger */
+    background-color: #222;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: shadow for the icon */
+}
+
+.shopping-cart-icon:hover {
+    background-color: #666; /* Optional: color change on hover */
+}
+
+.cart-item-count {
+    position: absolute;
+    top: -5px;  /* Adjust this value for better positioning */
+    right: -5px;  /* Adjust this value for better positioning */
+    background-color: #e63946;  /* Red color for the badge */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 20px;  /* Adjust width and height for desired size */
+    height: 20px;  /* Adjust width and height for desired size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
