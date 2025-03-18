@@ -15,9 +15,9 @@ If you are developing a production application, we recommend using TypeScript an
 Follow the steps below to get the project up and running:
 
 ```bash
-git clone https://github.com/Peeranut-Kit/todo-list-local-storage.git
+git clone https://github.com/Peeranut-Kit/react-movie-shopping-cart.git
 
-cd todo-list-local-storage
+cd react-movie-shopping-cart
 
 npm install
 
