@@ -14,14 +14,14 @@ If you are developing a production application, we recommend using TypeScript an
 
 Follow the steps below to get the project up and running:
 
-```bash```
+``bash
 git clone https://github.com/Peeranut-Kit/todo-list-local-storage.git
 
 cd todo-list-local-storage
 
 npm install
 
-npm run dev```
+npm run dev``
 
 ## Key features
 1. Search Function: Users can search for movies by name.
