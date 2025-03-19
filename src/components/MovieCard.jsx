@@ -29,8 +29,8 @@ const MovieCard = ({
       priceInputRef.current.focus();
       return;
     }
-    if (parseFloat(priceString) < 0) {
-      alert("Cannot set negative price");
+    if (parseFloat(priceString) <= 0) {
+      alert("Cannot set price to negative or zero value");
       priceInputRef.current.focus();
       return;
     }
